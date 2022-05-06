@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.header {
+  width: 400px;
+  height: 100px;
+  background-color: #141f40;
+}
+
+
+.left {
+  width: 150px;
+  height: 250px;
+  background-color: #80bfa8;
+  float: left;
+}
+
+.right {
+  width: 250px;
+  height: 250px;
+  background-color: #8c2727;
+  float: left;
+}
+
+.footer {
+  width: 400px;
+  height: 100px;
+  background-color: #d98d30;
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 250px;
+  }
+
+  .right {
+    width: 100px;
+  }
+
+  .footer {
+    width: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .header {
+    width: 150px;
+  }
+
+  .right {
+    width: 150px;
+    clear:both;
+  }
+
+  .footer {
+    width: 150px;
+  }
+  
+}
