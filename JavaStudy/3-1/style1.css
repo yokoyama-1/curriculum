@@ -16,6 +16,8 @@ body {
   content: "";
   display: block;
   clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 
@@ -36,9 +38,45 @@ body {
 .right {
   width: 250px;
   height: 250px;
+  float: right;
+}
+
+
+.red {
+  width: 250px;
+  height: 100px;
   background-color: #8c2727;
+}
+
+
+.right1 {
+  width: 100px;
+  height: 150px;
+  background-color: #ff9e6b;
+  float: right;
+}
+
+
+.left1 {
+  width: 150px;
+  height: 150px;
   float: left;
 }
+
+
+.yellow {
+  width: 150px;
+  height: 50px;
+  background-color: #dbd400;
+}
+
+
+.light-bule {
+  width: 150px;
+  height: 100px;
+  background-color: #0093b7;
+}
+
 
 .footer {
   width: 400px;
